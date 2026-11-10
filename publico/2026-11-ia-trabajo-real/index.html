@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Con IA, construir es fácil · Felipe Soto</title>
+<meta name="description" content="Keynote: con IA, construir es fácil; lo difícil es saber qué construir. El caso de la Fundación Summer.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css">
+<link rel="stylesheet" href="deck-v5.css">
+<link rel="stylesheet" href="deck-v6.css">
+</head>
+<body>
+<div id="stage">
+
+
+
+<section class="lam negra video-full sin-marca" id="apertura" data-titulo="Video: el caso y el desafío de Summer">
+  <video id="v-apertura" controls src="media/summer-caso.mp4" poster="media/summer-caso-poster.jpg" preload="auto" playsinline data-auto></video>
+</section>
+
+<section class="lam halo portada-cine" id="portada" data-titulo="Portada">
+  <div class="fondo-video" style="background-image:url(media/summer-caso-fin-oscuro.jpg)"></div><div class="velo-p"></div>
+  <div class="eti a">Crear software con IA · rápido, eficiente y con propósito</div>
+  <div class="frase a" style="max-width:none">Con IA, construir es fácil.</div>
+  <div class="frase a" style="max-width:none;color:var(--acc)">Lo difícil es saber qué construir.</div>
+  <div class="sub a" style="margin-top:60px;font-size:36px;color:var(--ink)">Antes de construir, hay que entrar a la sala.</div>
+  <div class="sub a" style="margin-top:20px;font-size:28px">Felipe Soto Santibáñez · Sumadots</div>
+</section>
+<section class="lam" id="dolor" data-titulo="Lo que se pide no es lo que duele">
+  <div class="eti a">Antes de construir</div>
+  <div class="titulo-accion a">Lo que se pide <em>no es lo que duele</em></div>
+  <div class="iceberg a" id="iceberg">
+    <svg viewBox="0 0 1600 600">
+      <defs>
+        <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(244,162,141,.65)"/><stop offset=".25" stop-color="rgba(244,162,141,.45)"/><stop offset=".255" stop-color="rgba(124,92,240,.22)"/><stop offset="1" stop-color="rgba(60,40,140,.10)"/></linearGradient>
+        <linearGradient id="profundo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(124,92,240,.10)"/><stop offset="1" stop-color="rgba(20,10,50,.55)"/></linearGradient>
+        <clipPath id="clip-ice"><polygon points="300,40 380,150 470,240 520,380 440,520 300,590 150,520 90,380 140,240 220,150"/></clipPath>
+      </defs>
+      <rect class="agua" x="0" y="150" width="1600" height="450" fill="url(#profundo)"/>
+      <g class="flota">
+        <polygon class="masa" points="300,40 380,150 470,240 520,380 440,520 300,590 150,520 90,380 140,240 220,150" fill="url(#ice)"/>
+        <g clip-path="url(#clip-ice)"><rect class="luz l1" x="60" y="155" width="480" height="140"/><rect class="luz l2" x="60" y="295" width="480" height="140"/><rect class="luz l3" x="60" y="435" width="480" height="165"/></g>
+      </g>
+      <path class="ola" d="M-200 150 Q -150 138 -100 150 T 0 150 T 100 150 T 200 150 T 300 150 T 400 150 T 500 150 T 600 150 T 700 150 T 800 150 T 900 150 T 1000 150 T 1100 150 T 1200 150 T 1300 150 T 1400 150 T 1500 150 T 1600 150 T 1700 150 T 1800 150"/>
+      <circle class="burb" cx="180" cy="590" r="5" style="animation-delay:0s"/><circle class="burb" cx="260" cy="590" r="4" style="animation-delay:1.3s"/><circle class="burb" cx="340" cy="590" r="6" style="animation-delay:2.4s"/><circle class="burb" cx="220" cy="590" r="3" style="animation-delay:3.1s"/><circle class="burb" cx="400" cy="590" r="4" style="animation-delay:0.7s"/><circle class="burb" cx="120" cy="590" r="4" style="animation-delay:2s"/>
+      <path class="con c0" d="M380 95 L 640 95"/><path class="con c1" d="M480 250 L 640 250"/><path class="con c2" d="M520 380 L 640 380"/><path class="con c3" d="M470 505 L 640 505"/>
+    </svg>
+    <div class="capa-i punta" style="top:62px"><small>Lo que se pide</small>«Un CRM, algo tipo Salesforce»</div>
+    <div class="capa-i paso" data-clase="#iceberg|v1" style="top:212px"><i data-ico="users"></i><span><small>Lo que duele · participantes</small>Personas que se pierden después del taller</span></div>
+    <div class="capa-i paso" data-clase="#iceberg|v2" style="top:342px"><i data-ico="heart-handshake"></i><span><small>Lo que duele · equipo</small>No saber a quién acompañar a tiempo</span></div>
+    <div class="capa-i paso" data-clase="#iceberg|v3" style="top:467px"><i data-ico="trending-up"></i><span><small>Lo que duele · fundación</small>No poder mostrar su impacto</span></div>
+  </div>
+  <div class="remate-i paso">Eso no se ve desde el computador: <em>se entiende en la sala.</em></div>
+</section>
+
+
+<section class="lam" id="freno" data-titulo="¿Qué te frenó?">
+  <div class="eti a">Para empezar · levanta la mano</div>
+  <div class="frase media a">¿Qué te frenó la última vez que <em>tuviste una idea</em>?</div>
+  <div class="opciones-mano a">
+    <div><i data-ico="clock"></i>No tengo tiempo</div>
+    <div><i data-ico="code"></i>No sé programar</div>
+    <div><i data-ico="users"></i>No tengo equipo</div>
+    <div><i data-ico="banknote"></i>Cuesta dinero</div>
+    <div><i data-ico="compass"></i>No sé por dónde partir</div>
+  </div>
+</section>
+
+<section class="lam" id="botella" data-titulo="El cuello de botella se movió">
+  <div class="eti a">Lo que cambió</div>
+  <div class="titulo-accion a">El cuello de botella <em>se movió</em></div>
+  <div class="bot3 a" id="b3">
+    <svg viewBox="0 0 1240 560"><path class="vidrio" d="M520 470 V250 Q520 210 560 190 L600 170 V110 H640 V170 L680 190 Q720 210 720 250 V470 Q720 500 690 500 H550 Q520 500 520 470 Z"/><g class="ideas3"><circle cx="691" cy="265" r="7"/><circle cx="657" cy="446" r="7"/><circle cx="548" cy="433" r="7"/><circle cx="600" cy="387" r="7"/><circle cx="546" cy="270" r="7"/><circle cx="572" cy="470" r="7"/><circle cx="574" cy="426" r="7"/><circle cx="684" cy="467" r="7"/><circle cx="597" cy="338" r="7"/><circle cx="624" cy="431" r="7"/><circle cx="561" cy="425" r="7"/><circle cx="665" cy="449" r="7"/><circle cx="550" cy="468" r="7"/><circle cx="559" cy="335" r="7"/><circle cx="637" cy="462" r="7"/><circle cx="596" cy="463" r="7"/><circle cx="627" cy="329" r="7"/><circle cx="593" cy="299" r="7"/><circle cx="557" cy="293" r="7"/><circle cx="648" cy="479" r="7"/><circle cx="569" cy="271" r="7"/><circle cx="693" cy="377" r="7"/><circle cx="606" cy="312" r="7"/><circle cx="634" cy="442" r="7"/><circle cx="613" cy="353" r="7"/><circle cx="553" cy="462" r="7"/><circle cx="550" cy="369" r="7"/><circle cx="671" cy="289" r="7"/><circle cx="655" cy="469" r="7"/><circle cx="640" cy="433" r="7"/></g>
+      <rect class="tapa" x="545" y="70" width="150" height="40" rx="10"/><rect class="hoyo" x="610" y="70" width="20" height="40"/>
+      <g class="sale"><circle class="go" cx="620" cy="100" r="7" style="animation-delay:0s"/><circle class="go" cx="620" cy="100" r="7" style="animation-delay:0.6s"/><circle class="go" cx="620" cy="100" r="7" style="animation-delay:1.2s"/><circle class="go" cx="620" cy="100" r="7" style="animation-delay:1.8s"/><circle class="go" cx="620" cy="100" r="7" style="animation-delay:2.4s"/></g></svg>
+    <div class="et3 e-cuello">Construir<small>cuello angosto: meses · equipo · dinero</small></div>
+    <div class="et3 e-ia">Construir, con IA<small>el cuello se ensancha: días</small></div>
+    <div class="et3 e-tapa">Saber qué construir<small>la tapa que siempre estuvo</small></div>
+  </div>
+  <i class="paso" data-clase="#b3|ia"></i><i class="paso" data-clase="#b3|tapa"></i>
+  <div class="paso remate-b">Construir dejó de ser lo difícil. <span class="acc">Lo difícil es saber qué construir.</span></div>
+</section>
+
+<section class="lam" id="atajo" data-titulo="Cuatro formas de construir">
+  <div class="eti a">Cuatro formas de construir</div>
+  <div class="titulo-accion a" style="font-size:54px">Con IA, la velocidad ya no es la diferencia: <em>pensar el sistema sí</em></div>
+  <div class="matriz a" id="matriz">
+    <div class="m-plano">
+      <div class="cuad q-bl"><span>Lento y genérico</span></div><div class="cuad q-br"><span>Rápido, pero sin rumbo</span></div>
+      <div class="cuad q-tl"><span>Con rumbo, pero lento</span></div><div class="cuad q-tr"><span>Rápido y con rumbo</span></div>
+      <svg class="m-flechas" viewBox="0 0 900 600"><defs><marker id="pm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f5c26b"/></marker><marker id="pv" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a78bfa"/></marker></defs>
+        <path class="fx f1" d="M290 455 L 560 455" marker-end="url(#pm)"/>
+        <path class="fx f2" d="M730 445 C 850 380, 850 230, 735 165" marker-end="url(#pv)"/></svg>
+      <div class="burbuja b1" style="left:200px;top:455px"><i data-ico="database"></i><b>El camino tradicional</b></div>
+      <div class="burbuja b2" style="left:650px;top:455px"><i data-ico="dices"></i><b>Usar mal la IA</b></div>
+      <div class="burbuja b3" style="left:200px;top:150px"><i data-ico="compass"></i><b>Pensar sin IA</b></div>
+      <div class="burbuja b4" style="left:650px;top:150px"><i data-ico="network"></i><b>Pensar el sistema + IA</b></div>
+      <div class="eje ex">Velocidad para construir →</div><div class="eje ey">Entender el problema →</div>
+    </div>
+    <div class="panel-m">
+      <div class="pm m0"><span class="tag">Dos preguntas</span><p>¿Qué tan rápido construyes? ¿Qué tanto entiendes el problema?</p></div>
+      <div class="pm m1"><span class="tag t-coral">El camino tradicional</span><p>Un CRM grande.</p><small>Meses de implementación, licencias caras y nadie sabe si lo van a usar.</small></div>
+      <div class="pm m2"><span class="tag t-amb">Usar mal la IA · «vibe coding»</span><p>Pedir y cruzar los dedos.</p><small>La IA te mueve a la derecha: más rápido, pero sin saber si vas hacia donde duele.</small></div>
+      <div class="pm m3"><span class="tag">Pensar sin IA</span><p>Entender bien, construir lento.</p><small>El problema se entiende, pero construir sigue tomando meses.</small></div>
+      <div class="pm m4"><span class="tag">Pensar como arquitecto + IA</span><p>Ver el sistema completo, y que la IA construya lo pensado.</p><small>Personas, datos, procesos, lo que ya existe. Se llega subiendo, no corriendo.</small></div>
+      <div class="pm m5"><span class="tag">Y tú</span><p>Pensar el sistema + IA.</p><div class="pregunta-m"><i data-ico="hand"></i>¿En qué cuadrante estaba tu último proyecto?</div></div>
+    </div>
+  </div>
+  <i class="paso" data-clase="#matriz|s1"></i><i class="paso" data-clase="#matriz|s2"></i><i class="paso" data-clase="#matriz|s3"></i><i class="paso" data-clase="#matriz|s4"></i><i class="paso" data-clase="#matriz|s5"></i>
+</section>
+
+
+
+<section class="lam" id="metodo" data-titulo="El método: un ciclo de 4 pasos">
+  <div class="titulo-accion a">Cómo entendimos el problema de Summer: <em>un ciclo, no una línea</em></div>
+  <div class="ciclo4 a" id="ciclo4">
+    <div class="rueda">
+      <svg viewBox="0 0 640 640">
+        <circle cx="320" cy="320" r="240" fill="none" stroke="rgba(244,243,247,.10)" stroke-width="4"/>
+        <path class="arco a1" d="M320 80 A240 240 0 0 1 560 320" />
+        <path class="arco a2" d="M560 320 A240 240 0 0 1 320 560" />
+        <path class="arco a3" d="M320 560 A240 240 0 0 1 80 320" />
+        <path class="arco a4" d="M80 320 A240 240 0 0 1 320 80" />
+      </svg>
+      <div class="centro-r"><i data-ico="repeat"></i><span>Summer</span></div>
+      <div class="n n1" style="left:320px;top:80px"><div class="o"><i data-ico="ear"></i></div><b>1 · Escuchar</b></div>
+      <div class="n n2" style="left:560px;top:320px"><div class="o"><i data-ico="pencil-line"></i></div><b>2 · Escribir la historia</b></div>
+      <div class="n n3" style="left:320px;top:560px"><div class="o"><i data-ico="target"></i></div><b>3 · Cómo sabremos</b></div>
+      <div class="n n4" style="left:80px;top:320px"><div class="o"><i data-ico="hammer"></i></div><b>4 · Construir y medir</b></div>
+    </div>
+    <div class="panel">
+      <div class="pp p0"><span class="tag">El método</span><p>4 pasos que puedes repetir en tu trabajo.</p><small>Los vamos a responder con lo que pasó en Summer.</small></div>
+      <div class="pp p1"><span class="tag">1 · Escuchar a quien vive el problema</span><p>¿Qué le pasa de verdad a la gente en el taller?</p><div class="pregunta"><i data-ico="hand"></i>¿Quién le ha preguntado directo a quien usa lo que hace?</div></div>
+      <div class="pp p2"><span class="tag">2 · Escribir la historia</span><p>¿<b>Quién</b> necesita <b>qué</b>, y <b>para qué</b>?</p><div class="pregunta"><i data-ico="hand"></i>¿Quién podría decir su proyecto en una sola frase?</div></div>
+      <div class="pp p3"><span class="tag">3 · Decidir cómo sabremos que funcionó</span><p>¿Qué número nos diría que sirvió?</p><div class="pregunta"><i data-ico="hand"></i>¿Quién define el número de éxito antes de empezar?</div></div>
+      <div class="pp p4"><span class="tag">4 · Construir lo mínimo y medir</span><p>¿Qué es lo más chico que resuelve eso?</p><div class="pregunta"><i data-ico="hand"></i>¿Quién ha construido todo de una… y nadie lo usó?</div></div>
+      <div class="pp p5"><span class="tag">Y vuelta a la sala</span><p>Lo que medimos abre la siguiente escucha.</p><div class="pregunta"><i data-ico="hand"></i>¿Cuál de estos pasos te saltas más en tu trabajo?</div></div>
+    </div>
+  </div>
+  <i class="paso" data-clase="#ciclo4|s1"></i><i class="paso" data-clase="#ciclo4|s2"></i><i class="paso" data-clase="#ciclo4|s3"></i><i class="paso" data-clase="#ciclo4|s4"></i><i class="paso" data-clase="#ciclo4|s5"></i>
+</section>
+
+<section class="lam" id="escuchar" data-titulo="1 · Lo que escuchamos en los talleres">
+  <div class="mini-ciclo" data-n="1"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="28"/><circle class="d d1" cx="40" cy="12" r="7"/><circle class="d d2" cx="68" cy="40" r="7"/><circle class="d d3" cx="40" cy="68" r="7"/><circle class="d d4" cx="12" cy="40" r="7"/></svg><span><small>Paso 1 de 4</small>Escuchar</span></div>
+  <div class="eti a">Paso 1 · Escuchar</div>
+  <div class="titulo-accion a">Lo que escuchamos en los talleres <em>no era «falta un CRM»</em></div>
+  <div class="hallazgos">
+    <div class="hallazgo paso"><i data-ico="qr-code"></i>El QR era una barrera<small>sobre todo para personas mayores</small></div>
+    <div class="hallazgo paso"><i data-ico="circle-help"></i>Miedo a no contestar «correctamente»<small>aunque fuera anónimo</small></div>
+    <div class="hallazgo paso"><i data-ico="compass"></i>No se entendía para qué se medía<small>faltaba contexto</small></div>
+    <div class="hallazgo paso"><i data-ico="unlink"></i>El taller no dejaba huella<small>cuatro herramientas sueltas</small></div>
+  </div>
+  <div class="pie">Fuente: informe de estrategia y reporte de cierre del proyecto con la Fundación Summer.</div>
+</section>
+
+<section class="lam" id="historias" data-titulo="2 · Cada hallazgo, una historia">
+  <div class="mini-ciclo" data-n="2"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="28"/><circle class="d d1" cx="40" cy="12" r="7"/><circle class="d d2" cx="68" cy="40" r="7"/><circle class="d d3" cx="40" cy="68" r="7"/><circle class="d d4" cx="12" cy="40" r="7"/></svg><span><small>Paso 2 de 4</small>Escribir la historia</span></div>
+  <div class="eti a">Paso 2 · Escribir la historia</div>
+  <div class="titulo-accion a" style="font-size:54px">Cada hallazgo se vuelve una historia: <em>quién, qué y para qué</em></div>
+  <div class="h2-cab a"><span>LO QUE ESCUCHAMOS</span><span></span><span>LA HISTORIA · COMO… QUIERO… PARA…</span></div>
+  <div class="h2-lista">
+    <div class="h2f paso"><div class="hz"><i data-ico="ear"></i><span>El QR era una barrera<small>sobre todo para personas mayores</small></span></div><svg class="h2a" viewBox="0 0 90 20"><path d="M0 10 H80 M70 2 L82 10 L70 18"/></svg><div class="hs"><i data-ico="user-round"></i><span>Como <b>participante</b>, quiero <b>entrar sin formularios</b> para <b>no trabarme con la tecnología</b>.</span></div></div>
+    <div class="h2f paso"><div class="hz"><i data-ico="ear"></i><span>Miedo a no contestar «correctamente»<small>aunque fuera anónimo</small></span></div><svg class="h2a" viewBox="0 0 90 20"><path d="M0 10 H80 M70 2 L82 10 L70 18"/></svg><div class="hs"><i data-ico="user-round"></i><span>Como <b>participante</b>, quiero <b>sentir que avanzo, no que me evalúan</b> para <b>responder sin miedo</b>.</span></div></div>
+    <div class="h2f paso"><div class="hz"><i data-ico="ear"></i><span>El taller no dejaba huella<small>cuatro herramientas sueltas</small></span></div><svg class="h2a" viewBox="0 0 90 20"><path d="M0 10 H80 M70 2 L82 10 L70 18"/></svg><div class="hs"><i data-ico="heart-handshake"></i><span>Como <b>equipo de la fundación</b>, quiero <b>saber quién se quedó a mitad de camino</b> para <b>acompañar a tiempo</b>.</span></div></div>
+    <div class="h2f paso"><div class="hz"><i data-ico="ear"></i><span>No se entendía para qué se medía<small>faltaba contexto</small></span></div><svg class="h2a" viewBox="0 0 90 20"><path d="M0 10 H80 M70 2 L82 10 L70 18"/></svg><div class="hs"><i data-ico="chart-no-axes-column-increasing"></i><span>Como <b>fundación</b>, quiero <b>medir el cambio antes y después</b> para <b>demostrar el impacto</b>.</span></div></div>
+  </div>
+</section>
+
+<section class="lam" id="sabremos" data-titulo="3 · Cómo sabremos que funcionó">
+  <div class="mini-ciclo" data-n="3"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="28"/><circle class="d d1" cx="40" cy="12" r="7"/><circle class="d d2" cx="68" cy="40" r="7"/><circle class="d d3" cx="40" cy="68" r="7"/><circle class="d d4" cx="12" cy="40" r="7"/></svg><span><small>Paso 3 de 4</small>Cómo sabremos</span></div>
+  <div class="eti a">Paso 3 · Antes de construir</div>
+  <div class="titulo-accion a" style="font-size:54px">Antes de construir: <em>¿cómo sabremos que funcionó?</em></div>
+  <div class="h2-cab h3-cab a"><span>LA HISTORIA · QUIERE…</span><span>SABREMOS QUE FUNCIONÓ SI…</span></div>
+  <div class="h3-lista">
+    <div class="h3f"><div class="hs3 a"><i data-ico="user-round"></i><span><small>Participante</small>Entrar sin formularios</span></div><div class="mira paso"><svg class="diana" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><circle cx="30" cy="30" r="16"/><circle cx="30" cy="30" r="6"/></svg><span>Su asistencia queda registrada sin ayuda</span><i class="ok" data-ico="circle-check"></i></div></div>
+    <div class="h3f"><div class="hs3 a"><i data-ico="user-round"></i><span><small>Participante</small>Sentir que avanzo, no que me evalúan</span></div><div class="mira paso"><svg class="diana" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><circle cx="30" cy="30" r="16"/><circle cx="30" cy="30" r="6"/></svg><span>Completa la ruta de bienvenida</span><i class="ok" data-ico="circle-check"></i></div></div>
+    <div class="h3f"><div class="hs3 a"><i data-ico="heart-handshake"></i><span><small>Equipo</small>Saber quién se quedó a mitad de camino</span></div><div class="mira paso"><svg class="diana" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><circle cx="30" cy="30" r="16"/><circle cx="30" cy="30" r="6"/></svg><span>Ve en qué paso se va cada persona</span><i class="ok" data-ico="circle-check"></i></div></div>
+    <div class="h3f"><div class="hs3 a"><i data-ico="chart-no-axes-column-increasing"></i><span><small>Fundación</small>Medir el cambio antes y después</span></div><div class="mira paso"><svg class="diana" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26"/><circle cx="30" cy="30" r="16"/><circle cx="30" cy="30" r="6"/></svg><span>Cada respuesta queda conectada a una persona</span><i class="ok" data-ico="circle-check"></i></div></div>
+  </div>
+  <div class="remate-3 paso"><i data-ico="target"></i>4 medidas definidas <span class="acc">antes de escribir una línea de código</span>.</div>
+</section>
+
+<section class="lam" id="resultado" data-titulo="4 · Construir lo mínimo">
+  <div class="mini-ciclo" data-n="4"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="28"/><circle class="d d1" cx="40" cy="12" r="7"/><circle class="d d2" cx="68" cy="40" r="7"/><circle class="d d3" cx="40" cy="68" r="7"/><circle class="d d4" cx="12" cy="40" r="7"/></svg><span><small>Paso 4 de 4</small>Construir y medir</span></div>
+  <div class="eti a">Paso 4 · Construir lo mínimo y medir</div>
+  <div class="titulo-accion a" style="font-size:54px">Una pieza por historia, <em>cada una con su medida</em></div>
+  <div class="piezas4">
+    <div class="pieza4 paso"><div class="para4"><i data-ico="user-round"></i><span>Para que una participante pueda <b>entrar sin formularios</b></span></div><div class="ico4"><i data-ico="qr-code"></i></div><b class="nom4">Ingreso con un QR permanente por evento</b><div class="mide4"><i data-ico="target"></i>Su asistencia queda registrada sin ayuda</div><span class="uso4">✓ En uso</span></div>
+    <div class="pieza4 paso"><div class="para4"><i data-ico="user-round"></i><span>Para que una participante sienta <b>que avanza, no que la evalúan</b></span></div><div class="ico4"><i data-ico="route"></i></div><b class="nom4">Rutas de bienvenida con logros</b><div class="mide4"><i data-ico="target"></i>Completa la ruta de bienvenida</div><span class="uso4">✓ En uso</span></div>
+    <div class="pieza4 paso"><div class="para4"><i data-ico="heart-handshake"></i><span>Para que el equipo pueda <b>saber quién se quedó a mitad de camino</b></span></div><div class="ico4"><i data-ico="users"></i></div><b class="nom4">Seguimiento de la comunidad</b><div class="mide4"><i data-ico="target"></i>Ve en qué paso se va cada persona</div><span class="uso4">✓ En uso</span></div>
+    <div class="pieza4 paso"><div class="para4"><i data-ico="chart-no-axes-column-increasing"></i><span>Para que la fundación pueda <b>medir el cambio antes y después</b></span></div><div class="ico4"><i data-ico="trending-up"></i></div><b class="nom4">Medición antes y después, conectada a cada persona</b><div class="mide4"><i data-ico="target"></i>Cada respuesta queda conectada a una persona</div><span class="uso4">✓ En uso</span></div>
+  </div>
+  <div class="remate-4 paso"><i data-ico="trending-up"></i>¿Funcionó? <span class="acc">Lo vemos al final.</span></div>
+</section>
+
+
+<section class="lam" id="barandas" data-titulo="Así está armado mi taller">
+  <div class="eti a" style="color:var(--claude)">Para que funcione y rinda</div>
+  <div class="titulo-accion a" style="font-size:54px">La IA no trabaja sola: trabaja dentro de <em>un taller ordenado</em></div>
+  <div class="taller" id="taller">
+    <svg class="lineas" viewBox="0 0 1600 480"><path class="p1" d="M690 240 C 625 240, 625 70, 560 70"/><path class="p2" d="M690 240 C 625 240, 625 240, 560 240"/><path class="p3" d="M690 240 C 625 240, 625 410, 560 410"/><path class="p4" d="M910 240 C 975 240, 975 70, 1040 70"/><path class="p5" d="M910 240 C 975 240, 975 240, 1040 240"/><path class="p6" d="M910 240 C 975 240, 975 410, 1040 410"/></svg>
+    <div class="claude-c a"><svg class="claude-logo" viewBox="-50 -50 100 100"><g fill="#D97757"><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(0)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(30)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(60)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(90)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(120)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(150)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(180)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(210)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(240)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(270)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(300)"/><rect x="-5" y="-46" width="10" height="34" rx="5" transform="rotate(330)"/></g></svg><span>Claude Code</span></div>
+    <div class="tarjeta t1 l" style="left:0px;top:0px"><span class="ico-c"><i data-ico="book-open"></i></span><div><b>Un manual corto</b><span>lo lee siempre: corto = menos tokens, más foco</span><code>CLAUDE.md · 42 líneas</code></div></div>
+    <div class="tarjeta t2 l" style="left:0px;top:170px"><span class="ico-c"><i data-ico="notebook-pen"></i></span><div><b>Una bitácora que se carga sola</b><span>cada sesión parte donde quedó; no hay que repetir todo</span><code>AGENTLOG.md</code></div></div>
+    <div class="tarjeta t3 l" style="left:0px;top:340px"><span class="ico-c"><i data-ico="chef-hat"></i></span><div><b>Recetas para lo que se repite</b><span>pieza nueva, producto nuevo, cambio en la base: nunca a mano</span><code>skills</code></div></div>
+    <div class="tarjeta t4 r" style="left:1040px;top:0px"><span class="ico-c"><i data-ico="shield-check"></i></span><div><b>Guardias automáticas</b><span>buscan claves antes de guardar y no dejan tocar lo ya publicado</span><code>hooks</code></div></div>
+    <div class="tarjeta t5 r" style="left:1040px;top:170px"><span class="ico-c"><i data-ico="users"></i></span><div><b>Revisores especializados</b><span>seguridad, arquitectura, base y pruebas, cada uno con el modelo justo</span><code>agentes</code></div></div>
+    <div class="tarjeta t6 r" style="left:1040px;top:340px"><span class="ico-c"><i data-ico="check-check"></i></span><div><b>Un solo chequeo</b><span>el mismo que corre antes de publicar</span><code>make check = CI</code></div></div>
+  </div>
+  <i class="paso" data-clase="#taller|v1"></i><i class="paso" data-clase="#taller|v2"></i><i class="paso" data-clase="#taller|v3"></i><i class="paso" data-clase="#taller|v4"></i><i class="paso" data-clase="#taller|v5"></i><i class="paso" data-clase="#taller|v6"></i>
+  <div class="flujo paso"><b>Idea</b><i>→</i><b>Diseño</b><i>→</i><b>Plan</b><i>→</i><b>Pruebas primero</b><i>→</i><b>Verificar</b><i>→</i><b>Revisar</b><span class="pie-t">Mochila liviana: leer por partes · /clear al cambiar de tarea</span></div>
+</section>
+<section class="lam negra sin-marca" id="demo" data-titulo="Demo: Claude Code en una sesión real">
+  <div class="vsc a" id="vsc">
+    <div class="vsc-tit"><span class="pts"><i></i><i></i><i></i></span><span>a-tiempo</span><span class="real">sesión real · pausas acortadas · 2×</span></div>
+    <div class="vsc-cuerpo">
+      <div class="vsc-act"><i data-ico="file-search"></i><i data-ico="code"></i><i data-ico="terminal"></i></div>
+      <div class="vsc-exp"><div class="vsc-h">EXPLORADOR</div><div class="arbol-v"><div class="fila carpeta" data-t="0" style="--n:0"><span class="tw">▾</span>a-tiempo<em class="badge"></em></div><div class="fila carpeta" data-t="2.0" style="--n:1"><span class="tw">▾</span>.claude<em class="badge"></em></div><div class="fila carpeta" data-t="2.2" style="--n:2"><span class="tw">▾</span>hooks<em class="badge"></em></div><div class="fila archivo" data-t="2.4" style="--n:3"><span class="tw"></span>guardia-lecturas.sh<em class="badge"></em></div><div class="fila archivo" id="f-guardia" data-t="2.6" style="--n:3"><span class="tw"></span>guardia-secretos.sh<em class="badge"></em></div><div class="fila archivo" data-t="2.8" style="--n:3"><span class="tw"></span>sesion-inicio.sh<em class="badge"></em></div><div class="fila carpeta" data-t="3.0" style="--n:2"><span class="tw">▾</span>skills/frase-a-chequeos<em class="badge"></em></div><div class="fila archivo" id="f-skill" data-t="3.2" style="--n:3"><span class="tw"></span>SKILL.md<em class="badge"></em></div><div class="fila archivo" data-t="3.4" style="--n:2"><span class="tw"></span>settings.json<em class="badge"></em></div><div class="fila carpeta" data-t="3.6" style="--n:1"><span class="tw">▾</span>data<em class="badge"></em></div><div class="fila archivo" data-t="3.8" style="--n:2"><span class="tw"></span>guia.json<em class="badge"></em></div><div class="fila carpeta" data-t="4.0" style="--n:1"><span class="tw">▾</span>docs/frases<em class="badge"></em></div><div class="fila archivo" id="f-frase" data-t="4.2" style="--n:2"><span class="tw"></span>AT-guia.md<em class="badge"></em></div><div class="fila carpeta" data-t="4.4" style="--n:1"><span class="tw">▾</span>src/a_tiempo<em class="badge"></em></div><div class="fila archivo" data-t="4.6" style="--n:2"><span class="tw"></span>__init__.py<em class="badge"></em></div><div class="fila archivo" id="f-codigo" data-t="44.0" style="--n:2"><span class="tw"></span>guia.py<em class="badge"></em></div><div class="fila carpeta" data-t="4.8" style="--n:1"><span class="tw">▾</span>tests<em class="badge"></em></div><div class="fila archivo" id="f-test" data-t="33.0" style="--n:2"><span class="tw"></span>test_AT-guia.py<em class="badge"></em></div><div class="fila archivo" data-t="5.0" style="--n:1"><span class="tw"></span>.mcp.json<em class="badge"></em></div><div class="fila archivo" id="f-log" data-t="5.2" style="--n:1"><span class="tw"></span>AGENTLOG.md<em class="badge"></em></div><div class="fila archivo" id="f-manual" data-t="5.4" style="--n:1"><span class="tw"></span>CLAUDE.md<em class="badge"></em></div><div class="fila archivo" id="f-pend" data-t="51.0" style="--n:1"><span class="tw"></span>pendientes.txt<em class="badge"></em></div><div class="fila archivo" data-t="5.6" style="--n:1"><span class="tw"></span>pyproject.toml<em class="badge"></em></div></div></div>
+      <div class="vsc-main"><div class="vsc-tabs"><b>TERMINAL</b><span>claude</span></div>
+        <video id="v-demo" controls src="media/demo-terminal.mp4" poster="media/demo-terminal-inicio.jpg" preload="auto" playsinline></video></div>
+    </div>
+    <div class="vsc-estado"><span id="vsc-escena">Escena 1 de 7 · Preparar el proyecto</span><span id="vsc-chequeos"></span></div>
+  </div>
+  <i class="paso" data-play="#v-demo"></i>
+</section>
+
+
+
+<section class="lam" id="ficha" data-titulo="Tu turno: tu primera historia de usuario">
+  <div class="eti a">Tu turno · en papel o en tus notas</div>
+  <div class="titulo-accion a" style="font-size:56px">Escribe tu primera <em>historia de usuario</em></div>
+  <div class="hu a" id="hu">
+    <div class="frase-hu">Como <span class="slot s1"><span class="q">¿quién tiene el problema?</span><span class="ej">una participante del taller</span></span>,<br>quiero <span class="slot s2"><span class="q">¿qué necesita hacer?</span><span class="ej">entrar sin formularios</span></span><br>para <span class="slot s3"><span class="q">¿para qué le sirve?</span><span class="ej">no trabarme y volver</span></span>.</div>
+    <div class="frase-hu chica">Sabré que funciona si <span class="slot s4"><span class="q">¿qué número cambia?</span><span class="ej">su asistencia queda registrada sin ayuda</span></span>.</div>
+    <div class="hu-pie"><span class="etq-ej">Ejemplo · Summer</span><span class="etq-tu"><i data-ico="clock"></i>Ahora tú · <b id="hu-reloj">3:00</b></span></div>
+  </div>
+  <i class="paso" data-clase="#hu|e1"></i><i class="paso" data-clase="#hu|e2"></i><i class="paso" data-clase="#hu|e3"></i><i class="paso" data-clase="#hu|e4"></i><i class="paso" data-clase="#hu|tu"></i>
+  <script>(() => { const hu = document.getElementById('hu'), r = document.getElementById('hu-reloj'); let t0 = null
+    setInterval(() => { if (!hu.classList.contains('tu')) { t0 = null; r.textContent = '3:00'; return }
+      if (!t0) t0 = Date.now(); const q = Math.max(0, 180 - Math.floor((Date.now() - t0) / 1000)); r.textContent = Math.floor(q / 60) + ':' + String(q % 60).padStart(2, '0') }, 250) })()</script>
+</section>
+
+
+
+<section class="lam negra video-full sin-marca" id="solucion" data-titulo="Video: lo que construimos">
+  <video id="v-solucion" src="media/summer-solucion-larga.mp4" poster="media/summer-solucion-larga-poster.jpg" preload="auto" playsinline data-auto controls></video>
+</section>
+
+<section class="lam" id="ciclo" data-titulo="Estamos construyendo una comunidad">
+  <div class="eti a">¿Se acuerdan del <span class="coral">1 de cada 10</span>?</div>
+  <div class="titulo-accion a" style="font-size:60px">Estamos construyendo <em>una comunidad</em></div>
+  <div class="cierre-g">
+    <div class="col-p">
+      <div class="puntos apagar a" data-total="100" data-quedan="10" data-quedan2="33"></div>
+      <div class="lbl-p paso" data-clase=".puntos|encender">Hoy, <b>1 de cada 3</b> completa su ruta después del taller</div>
+    </div>
+    <div class="bign">
+      <div class="par paso"><div class="bn"><b class="acc" data-cuenta="2.5" data-dec="1" data-pre="×">×2,5</b><span>captura de datos en 3 meses</span></div><div class="bn"><b class="acc" data-cuenta="1500" data-pre="+">+1.500</b><span>personas en 7 meses</span></div></div>
+      <div class="par paso"><div class="bn"><b data-cuenta="85" data-suf=" %">85 %</b><span>completa la ruta de bienvenida</span></div><div class="bn"><b data-cuenta="96" data-suf=" %">96 %</b><span>de las respuestas, conectadas a una persona</span></div></div>
+      <div class="par paso"><div class="bn"><b>4 → 1</b><span>herramientas sueltas, en un solo lugar</span></div><div class="bn"><b>US$114–159</b><span>al mes, una plataforma propia</span></div></div>
+    </div>
+  </div>
+  <div class="pie">Fuente: Fundación Summer (1 de cada 3, ×2,5, +1.500). Reporte de cierre y registros de la plataforma, 2026 (85 %, 96 %, 4 → 1, costo).</div>
+</section>
+
+
+
+<section class="lam negra centro sin-marca" id="cierre" data-titulo="Cierre: la sala llena">
+  <div class="sala-fondo" style="background-image:url(media/cierre-sala.jpg)"></div><div class="sala-velo"></div>
+  <div class="wow" id="wow">
+    <div class="wl l1">Para salvar una vida, <em>necesitamos cientos.</em></div>
+    <div class="wl l2">Para salvar cientos, <em>necesitamos miles.</em></div>
+    <div class="wl l3">Para salvar miles, <em>necesitamos millones.</em></div>
+    <div class="wautor">Fundación Summer</div>
+    <div class="wfin"><div class="frase">Antes de construir, hay que <em>entrar a la sala</em>.</div><div class="wpreg">¿Preguntas?</div><div class="wfirma">Felipe Soto Santibáñez · sumadots.com</div></div>
+  </div>
+  <i class="paso" data-clase="#wow|s1"></i><i class="paso" data-clase="#wow|s2"></i><i class="paso" data-clase="#wow|s3"></i><i class="paso" data-clase="#wow|s4"></i>
+</section>
+
+<div id="prog"></div>
+</div>
+<script src="iconos.js"></script>
+<script src="deck.js"></script>
+<script>
+// Demo: el explorador tipo VS Code sigue a la terminal (tiempos del video a 2×).
+(() => {
+  const v = document.getElementById('v-demo'), filas = [...document.querySelectorAll('#vsc .fila')]
+  const esc = [[0,'Preparar el proyecto'],[8.65,'Plan primero'],[21.7,'Tu revisión'],[31.4,'Chequeos en rojo'],[42.55,'En verde'],[50.8,'La guardia'],[63.15,'Bitácora']]
+  const $ = id => document.getElementById(id)
+  const pintar = () => { const t = v.currentTime
+    filas.forEach(f => f.classList.toggle('ve', t >= +f.dataset.t && (t > 0.05 || +f.dataset.t === 0)))
+    filas.forEach(f => f.classList.toggle('nuevo', t >= 1 && t >= +f.dataset.t && t < +f.dataset.t + 5 && +f.dataset.t > 0))
+    $('f-log').classList.toggle('leyendo', t >= 9 && t < 15); $('f-frase').classList.toggle('leyendo', t >= 9 && t < 15)
+    $('f-skill').classList.toggle('leyendo', t >= 32 && t < 36)
+    const test = $('f-test'); test.classList.toggle('rojo', t >= 37 && t < 47); test.classList.toggle('verde', t >= 47)
+    $('f-pend').classList.toggle('bloq', t >= 56); $('f-guardia').classList.toggle('leyendo', t >= 55 && t < 60)
+    $('f-log').classList.toggle('mod', t >= 64)
+    let n = 0; esc.forEach((e, i) => { if (t >= e[0]) n = i })
+    $('vsc-escena').textContent = 'Escena ' + (n + 1) + ' de 7 · ' + esc[n][1]
+    $('vsc-chequeos').textContent = t >= 47 ? '✓ 3 chequeos en verde' : t >= 37 ? '✗ 3 chequeos en rojo' : '' }
+  v.addEventListener('timeupdate', pintar); v.addEventListener('seeked', pintar); setInterval(() => { if (!v.paused) pintar() }, 200); pintar()
+})()
+</script>
+<audio id="cama" src="media/cama-portada.m4a" preload="auto"></audio>
+<script>
+// Música del video de Summer, separada de la voz: entra bajo las últimas palabras del video,
+// acompaña la aparición del título y se apaga sola. Se corta suave si se avanza antes.
+(() => {
+  const cama = document.getElementById('cama'), va = document.getElementById('v-apertura')
+  let rampa = null, apagarEn = null
+  const fundir = (a, ms, fin) => { clearInterval(rampa); const v0 = cama.volume, t0 = Date.now()
+    rampa = setInterval(() => { const k = Math.min(1, (Date.now() - t0) / ms); cama.volume = v0 + (a - v0) * k
+      if (k === 1) { clearInterval(rampa); fin && fin() } }, 40) }
+  const parar = ms => fundir(0, ms, () => cama.pause())
+  setInterval(() => {
+    if (!window.Deck) return
+    const id = Deck.lams[Deck.idx].id, sonando = !cama.paused
+    if (id === 'apertura') {
+      const cerca = va.duration && !va.paused && va.currentTime > va.duration - 6.3
+      if (cerca && !sonando) { cama.currentTime = 0; cama.volume = 0; cama.play().catch(() => {}); fundir(0.9, 3000) }
+      else if (sonando && va.currentTime < va.duration - 7) parar(800)
+    } else if (id === 'portada') {
+      if (sonando && !apagarEn) { apagarEn = Date.now() + 9000 }
+      if (apagarEn && Date.now() > apagarEn) { apagarEn = Infinity; parar(4500) }
+    } else if (sonando && apagarEn !== Infinity) { apagarEn = Infinity; parar(1200) }
+    if (id !== 'portada' && cama.paused) apagarEn = null
+  }, 100)
+})()
+</script>
+</body>
+</html>

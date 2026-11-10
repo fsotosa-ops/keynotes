@@ -1,0 +1,11 @@
+# Lista blanca: solo se publica lo que está en publico/ (más este archivo, el README,
+# el flujo de Pages y el script que arma la versión pública). Todo lo demás queda local.
+/*
+!/.gitignore
+!/README.md
+!/.github/
+!/publico/
+!/scripts/
+/scripts/*
+!/scripts/publicar.py
+.DS_Store
