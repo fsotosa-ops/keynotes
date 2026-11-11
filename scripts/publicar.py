@@ -19,7 +19,7 @@ html = re.sub(r'<!--.*?-->', '', html, flags=re.S)                    # sin come
 fuentes = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
            '<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">')
 html = html.replace('<link rel="stylesheet" href="deck.css">', fuentes + '\n<link rel="stylesheet" href="deck.css">', 1)
-html = html.replace('<title>Crear software con IA</title>', '<title>Con IA, construir es fácil · Felipe Soto</title>\n<meta name="description" content="Keynote: con IA, construir es fácil; lo difícil es saber qué construir. El caso de la Fundación Summer.">')
+html = html.replace('<title>Crear software con IA</title>', '<title>La diferencia es saber qué y cómo construir · Felipe Soto</title>\n<meta name="description" content="Keynote: con IA, cualquiera puede construir; la diferencia es saber qué y cómo construir. El caso de la Fundación Summer.">')
 (destino / 'index.html').write_text(html)
 
 archivos = ['deck.css', 'deck-v5.css', 'deck-v6.css', 'iconos.js', 'deck.js']
