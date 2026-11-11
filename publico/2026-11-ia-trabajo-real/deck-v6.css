@@ -639,3 +639,9 @@
 #cierre:has(.wow.s1) .sala-fondo { filter: saturate(.85) brightness(.6) blur(1px); }
 #cierre:has(.wow.s1) .sala-velo { background: radial-gradient(ellipse at 50% 55%, rgba(11,10,18,.45), rgba(11,10,18,.85) 80%); }
 #cierre:has(.wow.s4) .sala-fondo { filter: saturate(.6) brightness(.35) blur(3px); }
+
+/* ---------- v6.11 · Marcas: UCV Virtual + Sumadots, chicas ---------- */
+.marca { display: flex; align-items: center; gap: 18px; height: auto; opacity: 1; right: 70px; bottom: 44px; }
+.marca .sd { height: 20px; opacity: .5; }
+.marca .ucv { display: flex; align-items: center; height: 32px; padding: 3px 10px; border-radius: 9px; background: #fff; opacity: .85; }
+.marca .ucv img { height: 100%; display: block; }

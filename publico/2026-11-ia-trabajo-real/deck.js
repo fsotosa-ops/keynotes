@@ -25,7 +25,9 @@
   // Marca en cada lámina
   lams.forEach(l => {
     if (!l.querySelector('.marca')) {
-      const m = document.createElement('img'); m.src = 'media/sumadots-wordmark-white.svg'; m.className = 'marca'; m.alt = ''
+      // Marcas: UCV Virtual (en una píldora clara, el logo es a color) y Sumadots
+      const m = document.createElement('div'); m.className = 'marca'
+      m.innerHTML = '<span class="ucv"><img src="media/ucv-virtual.png" alt="UCV Virtual · Facultad de Ingeniería y Arquitectura"></span><img class="sd" src="media/sumadots-wordmark-white.svg" alt="Sumadots">'
       l.appendChild(m)
     }
     $$('.a', l).forEach((e, i) => { if (!e.style.getPropertyValue('--i')) e.style.setProperty('--i', i) })
